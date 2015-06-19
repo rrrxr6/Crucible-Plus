@@ -1,10 +1,10 @@
 {
 	"manifest_version": 2,
-	"name": "Crucible+",
+	"name": "Crucible +",
 	"version": "1.0",
 
 	"description": "Integrate Crucible with Jenkins. Automatically insert boilerplate comments into reviews.",
-	"icons": {"48" : "images/pageAction.png"},
+	"icons": {"48" : "images/pageAction.png", "128" : "images/pageAction.png"},
 
 	"background": {
 		"scripts": ["js/background.js"],
