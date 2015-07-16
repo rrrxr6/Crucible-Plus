@@ -1,7 +1,7 @@
 {
 	"manifest_version": 2,
 	"name": "Crucible +",
-	"version": "1.0",
+	"version": "1.1",
 
 	"description": "Integrate Crucible with Jenkins.",
 	"icons": {"48" : "images/pageAction.png", "128" : "images/pageAction.png"},
