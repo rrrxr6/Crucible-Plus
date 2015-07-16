@@ -3,25 +3,12 @@
 	"name": "Crucible +",
 	"version": "1.0",
 
-	"description": "Integrate Crucible with Jenkins. Automatically insert boilerplate comments into reviews.",
+	"description": "Integrate Crucible with Jenkins.",
 	"icons": {"48" : "images/pageAction.png", "128" : "images/pageAction.png"},
-
-	"background": {
-		"scripts": ["js/background.js"],
-		"persistent": false
-	},
-
-	"page_action": {
-		"default_icon" : {"38" : "images/pageAction.png"},
-		"default_title" : "Crucible+",
-		"default_popup" : "pageAction.html"
-	},
 	
 	"permissions" : [
 		"tabs",
-		"<all_urls>",
-		"declarativeContent",
-		"storage"
+		"<all_urls>"
 	],
 	
 	"content_scripts": [
@@ -29,5 +16,10 @@
 			"matches": ["http://*/viewer/cru*"],
 			"js": ["js/jquery.js", "js/jenkinsIcon.js"]
 		}
+	],
+	
+	"web_accessible_resources": [
+		"images/*.png",
+		"images/*.gif"
 	]
 }
